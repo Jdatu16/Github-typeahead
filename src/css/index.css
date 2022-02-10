@@ -1,0 +1,72 @@
+*,
+*::before,
+*::after,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --clr-primary: #161b22;
+  --clr-font: #fff;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+/* styling */
+
+.main-container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  background-color: var(--clr-primary);
+  z-index: 1;
+}
+/* github logo background style */
+.github {
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%);
+  max-width: 270px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: rgba(104, 104, 104, 0.288);
+}
+.github > p {
+  font-size: 30px;
+  font-weight: 700;
+}
+.github > i {
+  font-size: 200px;
+}
+/* input style */
+input {
+  padding: 10px;
+  border-radius: 10px;
+  position: absolute;
+  top: 50px;
+  width: 80%;
+  max-width: 350px;
+  min-width: 250px;
+  border: none;
+  z-index: 3;
+}
+input:focus {
+  outline: none;
+}
+
+.users-count {
+  color: var(--clr-font);
+  position: absolute;
+  top: 100px;
+}

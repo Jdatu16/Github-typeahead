@@ -27,6 +27,10 @@ function App() {
 
   return (
     <div className="main-container">
+      <div className="github">
+        <i className="fab fa-github-alt"></i>
+        <p>Github User Search</p>
+      </div>
       <input
         type="text"
         placeholder="Type to search"
@@ -35,6 +39,7 @@ function App() {
           setUsers([]);
           setPageNumber(1);
           setSearch(e.target.value);
+          setLoading("true");
         }}
       />
       {loading !== "none" && (

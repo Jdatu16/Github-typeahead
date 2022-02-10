@@ -8,7 +8,7 @@ export const callBackTool = (
 ) => {
   // if totalUsers number equals the length of the users object
   // it means that all of the avaliable data was already retrieved so
-  // fetching process will stop
+  // it wont try to fetch anymore
   if (loading !== "false" || users.length === totalUsers) return;
   if (observer.current) observer.current.disconnect();
   observer.current = new IntersectionObserver((entries) => {

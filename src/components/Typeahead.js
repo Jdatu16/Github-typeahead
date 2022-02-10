@@ -1,3 +1,5 @@
+import "../css/typeahead.css";
+
 export const Typeahead = ({ users, lastUserRef }) => {
   return (
     <div className="typeahead">
